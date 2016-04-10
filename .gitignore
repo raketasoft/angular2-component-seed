@@ -2,8 +2,6 @@
 npm-debug.log
 
 /build
-*.js
-*.js.map
 
 # type script artifacts
 /typings
