@@ -20,10 +20,6 @@ Clone repository and then run:
 ## Node Scripts
 
 * `npm run clean` clean up build files
-* `npm run build` compiles and builds component and example application files
+* `npm run build` compile and build component and example application files
 * `npm start` start [lite-server](https://github.com/johnpapa/lite-server) and
-watches for changes
-
-
-
-
+watch for changes
