@@ -1,0 +1,39 @@
+{
+  "name": "angular2-component-seed",
+  "version": "1.0.0-alpha",
+  "description": "Starter seed application for Angular 2 components using TypeScript",
+  "scripts": {
+    "clean": "gulp clean",
+    "compile": "gulp compile",
+    "build": "gulp build",
+    "start": "concurrently --kill-others \"gulp watch\" \"lite-server\"",
+    "postinstall": "typings install"
+  },
+  "author": "Branimir Borisov",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raketasoft/angular2-component-seed.git"
+  },
+  "dependencies": {
+    "angular2": "2.0.0-beta.13",
+    "systemjs": "0.19.25",
+    "es6-shim": "^0.35.0",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.2",
+    "zone.js": "0.6.6"
+  },
+  "devDependencies": {
+    "concurrently": "^2.0.0",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-tslint": "^4.3.3",
+    "gulp-typescript": "^2.12.0",
+    "gulp-watch": "^4.3.5",
+    "lite-server": "^2.1.0",
+    "tslint": "^3.7.1",
+    "typescript": "^1.8.9",
+    "typings":"^0.7.12"
+  }
+}
