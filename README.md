@@ -10,7 +10,7 @@ Starter seed application for Angular 2 components using TypeScript.
 * Dynamic module loading with [SystemJS](https://github.com/systemjs/systemjs)
 * Basic component example application
 
-## Install
+## Installation
 
 Clone repository and then run:
 
