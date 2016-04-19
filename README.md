@@ -23,3 +23,12 @@ Clone repository and then run:
 * `npm run build` compile and build component and example application files
 * `npm start` start [lite-server](https://github.com/johnpapa/lite-server) and
 watch for changes
+
+## TBD
+
+* Integrate unit tests with Jasmine and Karma
+
+## License
+
+MIT
+
