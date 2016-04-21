@@ -32,6 +32,7 @@
     "gulp-typescript": "^2.12.0",
     "gulp-watch": "^4.3.5",
     "lite-server": "^2.1.0",
+    "ts-node": "^0.7.1",
     "tslint": "^3.7.1",
     "typescript": "^1.8.9",
     "typings": "^0.7.12"
