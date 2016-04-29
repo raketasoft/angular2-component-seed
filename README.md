@@ -8,7 +8,7 @@ Starter seed application for Angular 2 components using TypeScript.
 [TypeScript](http://www.typescriptlang.org)
 * Ready to go build system with [Gulp](http://gulpjs.com)
 * Dynamic module loading with [SystemJS](https://github.com/systemjs/systemjs)
-* Basic component example application
+* Component demo application
 
 ## Installation
 
