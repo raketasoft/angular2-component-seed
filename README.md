@@ -15,6 +15,7 @@ Starter seed application for Angular 2 components using TypeScript.
 Clone repository and then run:
 
 * `npm install -g gulp` to install gulp globally
+* `npm install -g typings` to install typings globally *(optional)*
 * `npm install` to install local dependencies
 
 ## Node Scripts
