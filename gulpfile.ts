@@ -86,7 +86,7 @@ gulp.task('libs', () => {
       '@angular/platform-browser-dynamic/**/*.js',
       '@angular/platform-browser/**/*.js'
     ], {cwd: 'node_modules/**'}) /* Glob required here. */
-    .pipe(gulp.dest('build/libs'));
+    .pipe(gulp.dest('build/lib'));
 });
 
 /**
