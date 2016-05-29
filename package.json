@@ -12,6 +12,10 @@
     "tslint": "gulp tslint",
     "typings": "typings"
   },
+  "main": "index.js",
+  "typings": {
+    "definition": "index.d.ts"
+  },
   "author": "Branimir Borisov",
   "license": "MIT",
   "repository": {

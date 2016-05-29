@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NgComponent } from '../ng-component';
+import { NgComponent } from '../index';
 
 @Component({
   directives: [NgComponent],

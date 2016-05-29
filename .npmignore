@@ -1,0 +1,23 @@
+*.ts
+!*.d.ts
+/demo
+.npmignore
+bs-config.json
+gulpfile.*
+systemjs.config.js
+tsconfig.json
+tslint.json
+typings.json
+
+# type script artifacts
+/typings
+
+# webstorm project files
+.idea
+
+# netbeans project files
+/nbproject
+
+# sublime text project / workspace files
+*.sublime-project
+*.sublime-workspace
