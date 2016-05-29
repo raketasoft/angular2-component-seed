@@ -5,6 +5,7 @@ import * as del from 'del';
 gulp.task('tslint', () => {
   return gulp.src([
       '**/*.ts',
+      '!**/*.d.ts',
       '!node_modules/**/*.ts',
       '!typings/**/*.ts'
     ])

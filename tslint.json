@@ -21,7 +21,6 @@
     ],
     "curly": true,
     "eofline": true,
-    "forin": true,
     "indent": [
       true,
       "spaces"
@@ -37,10 +36,11 @@
       true,
       140
     ],
-    "member-access": true,
     "member-ordering": [
       true,
-      { "order": "fields-first" }
+      "public-before-private",
+      "static-before-instance",
+      "variables-before-functions"
     ],
     "new-parens": true,
     "no-angle-bracket-type-assertion": true,
@@ -58,9 +58,7 @@
       "trace"
     ],
     "no-construct": true,
-    "no-constructor-vars": true,
     "no-debugger": true,
-    "no-default-export": true,
     "no-duplicate-key": true,
     "no-duplicate-variable": true,
     "no-empty": true,
@@ -71,7 +69,6 @@
       true,
       "check-function-in-method"
       ],
-    "no-null-keyword": true,
     "no-reference": true,
     "no-require-imports": true,
     "no-shadowed-variable": true,
@@ -82,9 +79,7 @@
     "no-unused-expression": true,
     "no-unused-variable": true,
     "no-use-before-declare": true,
-    "no-var-keyword": true,
     "no-var-requires": true,
-    "object-literal-sort-keys": true,
     "one-line": [
       true,
       "check-open-brace",
@@ -110,7 +105,6 @@
     ],
     "typedef": [
       true,
-      "call-signature",
       "parameter",
       "arrow-parameter",
       "property-declaration",
