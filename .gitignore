@@ -1,7 +1,10 @@
 /node_modules
 npm-debug.log
 
-/build
+*.js
+!systemjs.config.js
+*.js.map
+*.d.ts
 
 # type script artifacts
 /typings
