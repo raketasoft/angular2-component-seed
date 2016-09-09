@@ -9,8 +9,10 @@ gulp.task('tslint', () => {
       '!node_modules/**/*.ts',
       '!typings/**/*.ts'
     ])
-    .pipe(tslint())
-    .pipe(tslint.report('verbose'));
+    .pipe(tslint({
+      formatter: "verbose"
+    }))
+    .pipe(tslint.report());
 });
 
 gulp.task('clean', () => {
