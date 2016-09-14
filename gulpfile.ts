@@ -10,7 +10,7 @@ gulp.task('tslint', () => {
       '!typings/**/*.ts'
     ])
     .pipe(tslint({
-      formatter: "verbose"
+      formatter: 'verbose'
     }))
     .pipe(tslint.report());
 });
@@ -24,6 +24,10 @@ gulp.task('clean', () => {
     '!node_modules/**/*.js.map',
     '!node_modules/**/*.d.ts',
     '!typings/**/*.d.ts',
-    '!systemjs.config.js'
+    '!systemjs.config.js',
+    '!systemjs.config.js',
+    '!karma-test-shim.js',
+    '!karma.conf.js',
+    '!protractor.config.js',
   ]);
 });

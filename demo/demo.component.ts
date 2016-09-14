@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { NgComponent } from '../index';
 
 @Component({
-  directives: [NgComponent],
-  selector: 'demo',
+  selector: 'my-demo',
   template: `
+    <h1>Demo</h1>
     <h2>Basic Example</h2>
-    <ng-component>Loading...</ng-component>`
+    <my-component>Loading...</my-component>`
 })
 export class DemoComponent { }

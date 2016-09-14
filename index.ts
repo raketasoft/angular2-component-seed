@@ -1,1 +1,1 @@
-export * from './src/ng-component';
+export * from './src/my-component.module';
