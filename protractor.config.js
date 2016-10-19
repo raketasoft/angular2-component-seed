@@ -34,7 +34,7 @@ exports.config = {
   useAllAngular2AppRoots: true,
 
   // Base URL for application server
-  baseUrl: 'http://localhost:8000',
+  baseUrl: 'http://localhost:8080/demo',
 
   // doesn't seem to work.
   // resultJsonOutputFile: "foo.json",
@@ -129,7 +129,26 @@ function Reporter(options) {
     fs.appendFileSync(outputFile, output);
   };
 
+  function ensureDirectoryExistence(filePath) {
+    var dirname = path.dirname(filePath);
+    if (directoryExists(dirname)) {
+      return true;
+    }
+    ensureDirectoryExistence(dirname);
+    fs.mkdirSync(dirname);
+  }
+
+  function directoryExists(path) {
+    try {
+      return fs.statSync(path).isDirectory();
+    }
+    catch (err) {
+      return false;
+    }
+  }
+
   function initOutputFile(outputFile) {
+    ensureDirectoryExistence(outputFile);
     var header = "Protractor results for: " + (new Date()).toLocaleString() + "\n\n";
     fs.writeFileSync(outputFile, header);
   }
