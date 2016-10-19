@@ -9,8 +9,10 @@ gulp.task('tslint', () => {
       '!node_modules/**/*.ts',
       '!typings/**/*.ts'
     ])
-    .pipe(tslint())
-    .pipe(tslint.report('verbose'));
+    .pipe(tslint({
+      formatter: 'verbose'
+    }))
+    .pipe(tslint.report());
 });
 
 gulp.task('clean', () => {
@@ -22,6 +24,10 @@ gulp.task('clean', () => {
     '!node_modules/**/*.js.map',
     '!node_modules/**/*.d.ts',
     '!typings/**/*.d.ts',
-    '!systemjs.config.js'
+    '!systemjs.config.js',
+    '!systemjs.config.js',
+    '!karma-test-shim.js',
+    '!karma.conf.js',
+    '!protractor.config.js',
   ]);
 });

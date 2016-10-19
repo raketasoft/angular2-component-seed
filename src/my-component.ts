@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'ng-component',
+  selector: 'my-component',
   template: '<p>My Angular 2 Component</p>'
 })
-export class NgComponent {
+export class MyComponent {
 }
