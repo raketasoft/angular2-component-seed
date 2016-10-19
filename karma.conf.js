@@ -5,8 +5,8 @@ module.exports = function(config) {
   var appSrcBase = 'demo/';       // app source TS files
   var appAssets  = '/base/demo/'; // component assets fetched by Angular's compiler
 
-  var componentBase    = 'src/';       // transpiled app JS and map files
-  var componentSrcBase = 'src/';       // app source TS files
+  var componentBase    = 'src/';       // transpiled component JS and map files
+  var componentSrcBase = 'src/';       // component source TS files
   var componentAssets  = '/base/src/'; // component assets fetched by Angular's compiler
 
   var testBase    = 'testing/';       // transpiled test JS and map files
@@ -18,7 +18,8 @@ module.exports = function(config) {
     plugins: [
       require('karma-jasmine'),
       require('karma-chrome-launcher'),
-      require('karma-htmlfile-reporter')
+      require('karma-jasmine-html-reporter'), // click "Debug" in browser to see it
+      require('karma-htmlfile-reporter') // crashing w/ strange socket error
     ],
 
     customLaunchers: {
@@ -64,13 +65,12 @@ module.exports = function(config) {
       {pattern: testBase + '**/*.js', included: false, watched: true},
       {pattern: componentBase + '**/*.js', included: false, watched: true},
 
-
       // Asset (HTML & CSS) paths loaded via Angular's component compiler
       // (these paths need to be rewritten, see proxies section)
       {pattern: appBase + '**/*.html', included: false, watched: true},
       {pattern: appBase + '**/*.css', included: false, watched: true},
-      {pattern: componentAssets + '**/*.html', included: false, watched: true},
-      {pattern: componentAssets + '**/*.css', included: false, watched: true},
+      {pattern: componentBase + '**/*.html', included: false, watched: true},
+      {pattern: componentBase + '**/*.css', included: false, watched: true},
 
       // Paths for debugging with source maps in dev tools
       {pattern: appSrcBase + '**/*.ts', included: false, watched: false},
@@ -90,7 +90,8 @@ module.exports = function(config) {
 
     exclude: [],
     preprocessors: {},
-    reporters: ['progress', 'html'],
+    // disabled HtmlReporter; suddenly crashing w/ strange socket error
+    reporters: ['progress', 'kjhtml'],//'html'],
 
     // HtmlReporter configuration
     htmlReporter: {
