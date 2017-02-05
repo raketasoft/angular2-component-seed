@@ -1,8 +1,8 @@
+import { browser, element, by } from 'protractor';
 
-describe('Angular 2 Component Seed E2E Tests', function () {
+describe('Demo E2E Tests', function () {
 
   let expectedMsg = 'Demo';
-
 
   beforeEach(function () {
     browser.get('');

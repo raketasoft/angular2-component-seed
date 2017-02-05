@@ -7,4 +7,4 @@ import { Component } from '@angular/core';
     <h2>Basic Example</h2>
     <my-component>Loading...</my-component>`
 })
-export class DemoComponent { }
+export class DemoComponent  { }
