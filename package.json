@@ -63,6 +63,9 @@
 
     "del": "^2.2.2",
     "gulp": "^3.9.1",
-    "gulp-typescript": "~3.1.4"
+    "gulp-typescript": "~3.1.4",
+
+    "@types/gulp": "^3.8.32",
+    "@types/del": "^2.2.32"
   }
 }
